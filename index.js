@@ -3,7 +3,7 @@ let key = "Ztg4nr06u7HaKeygmhrnaj9OYxc2EX6x"
 let url ;
  const searchForm = document.querySelector('form');
  const searchTerm = document.querySelector('.search');
- const limit = document.querySelector('.limit'); 
+ //*const limit = document.querySelector('.limit'); 
 
  searchForm.addEventListener('submit', fetchResults);
   
@@ -12,16 +12,17 @@ function fetchResults(e) {
     console.log(e);
     e.preventDefault(); 
 
-  url = baseurl + searchTerm.value + "&api_key=" + key + "&limit=" + limit.value;
+  url = baseurl + searchTerm.value + "&api_key=" + key + "&limit=1" ;
   console.log("URL:", url);
   console.log(searchTerm.value);
-  console.log(limit.value);
+  //*console.log(limit.value);
 
 fetch(url)
 .then(function(result) {
     return result.json(); 
   })
   .then(function(json) {
+    console.log(json)
     display_results(json);
     
 }
@@ -30,7 +31,9 @@ fetch(url)
 )}
     function display_results(json){
         let results = json
+        console.log(json)
         console.log(results)
+        
 
         
 
@@ -48,6 +51,7 @@ fetch(url)
         display.insertAdjacentElement('afterbegin',gif);
         document.querySelector('.search').value = "";
     }
+    
 
   /*.catch(err){
     console.error(err); 
