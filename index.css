@@ -1,0 +1,58 @@
+
+#figcaption{
+    font-size: 50px;
+}
+.display{
+    font-size: 30px;
+    float: center;
+    margin: auto;
+    padding-left: 280px;
+    color: white;
+}
+.row{
+    font-size: 14px;
+    color: white;
+    
+    
+}
+.container{
+    height: 100vh;
+    background-position-x: center;
+    justify-content: center;
+    float: center;
+    
+}
+body{
+    background: url(./assets/background1.jpg);
+}
+#btn1{
+    margin: auto;
+    border-radius: 16px;
+}
+#limit{
+    margin: 10px;
+}
+.label{
+    margin: 15px;
+    
+}
+#search{
+    margin: 10px;
+}
+.search{
+    margin: auto;
+}
+img{
+  
+    
+    margin: auto;
+    padding: auto;
+    
+    
+}
+#id{
+    position: relative;
+    margin: auto;
+
+    
+}
